@@ -43,13 +43,14 @@
 
 
     </RelativeLayout>
-<ListView
-    android:id="@+id/listcm"
-    android:layout_below="@+id/realcmlike"
-    android:layout_width="wrap_content"
-    android:layout_height="450dp">
+        <ListView
+            android:id="@+id/listcm"
+            android:layout_below="@+id/realcmlike"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/realanh2">
 
-</ListView>
+        </ListView>
 
         <View
             android:id="@+id/viewha"

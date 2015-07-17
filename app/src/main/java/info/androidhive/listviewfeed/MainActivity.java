@@ -58,6 +58,7 @@ public class MainActivity extends BaseActivity {
         viewPager.setAdapter(pagerAdapter);
 
         getSlidingMenu().setMode(SlidingMenu.RIGHT);
+        getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
         getSlidingMenu().setSecondaryMenu(R.layout.menu_frame_two);
         getSupportFragmentManager()
                 .beginTransaction()

@@ -314,7 +314,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int real6=0x7f08006c;
         public static final int real7=0x7f08006e;
         public static final int realanh=0x7f080017;
-        public static final int realanh2=0x7f080016;
+        public static final int realanh2=0x7f080015;
         public static final int realc=0x7f080053;
         public static final int realcm=0x7f08001a;
         public static final int realcmlike=0x7f080010;
@@ -374,7 +374,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int viewcach=0x7f08004a;
         public static final int viewcn=0x7f08007c;
         public static final int viewg=0x7f080055;
-        public static final int viewha=0x7f080015;
+        public static final int viewha=0x7f080016;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -408,6 +408,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
+        public static final int menu_poput=0x7f0a0001;
     }
     public static final class string {
         public static final int action_settings=0x7f090000;
