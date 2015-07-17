@@ -18,22 +18,20 @@ import info.androidhive.listviewfeed.friend_olline.SampleListFragment;
 
 
 public class MainActivity extends BaseActivity {
-
-    public MainActivity()
-    {
+    public MainActivity() {
         super(R.string.app_name);
     }
     ViewPager viewPager;
     SlidingTabLayout tabs;
     BadgeView badge;
-    int[] icons={
+    int[] icons= {
             R.drawable.newfeed,
             R.drawable.request,
             R.drawable.messenger,
             R.drawable.notifi,
             R.drawable.more
     };
-    CharSequence[] titles={
+    CharSequence[] titles= {
             "News",
             "Request",
             "Messenger",
@@ -42,16 +40,12 @@ public class MainActivity extends BaseActivity {
     };
     TabsPagerAdapter pagerAdapter;
 
-
     @SuppressLint("NewApi")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        // These two lines not needed,
-        // just to get the look of facebook (changing background color & hiding the icon)
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
         getActionBar().setIcon(
                 new ColorDrawable(getResources().getColor(android.R.color.transparent)));

@@ -8,9 +8,6 @@ package info.androidhive.listviewfeed.Messenger;
  */
 
 public class Utility {
-	//List of colors ;)
-//	public static final String[] sender= new String[] {"Lalit", "RobinHood", "Captain","Vice Captain",
-//			"PurpleDroid", "HotVerySpicy", "Dharmendra", "PareshMayani", "Abhi", "SpK", "CapDroid"};
 
 	public static final String[] messages= new String[] {
 		"Aah! thats cool",
@@ -23,5 +20,4 @@ public class Utility {
 		"@RobinHood.",
 		"Lalit ka Dillllll...!!!",
 		"I'm fine, thanks, what about you?"};
-	
 }

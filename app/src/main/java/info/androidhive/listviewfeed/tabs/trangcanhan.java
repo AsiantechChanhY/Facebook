@@ -55,8 +55,6 @@ public class trangcanhan extends Activity {
         listAdapter = new FeedListAdapter(this, feedItems);
         mListViewnews.setAdapter(listAdapter);
 
-
-
         Cache cache = AppController.getInstance().getRequestQueue().getCache();
         Cache.Entry entry = cache.get(URL_FEED);
         if (entry != null) {

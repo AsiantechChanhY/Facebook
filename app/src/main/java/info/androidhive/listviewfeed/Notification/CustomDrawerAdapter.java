@@ -21,15 +21,12 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 	List<DrawerItem> drawerItemList;
 	int layoutResID;
 
-
 	public CustomDrawerAdapter(Context context, int layoutResourceID, List<DrawerItem> listItems) {
 		super(context, layoutResourceID, listItems);
 		this.context = context;
 		this.drawerItemList = listItems;
 		this.layoutResID = layoutResourceID;
 	}
-
-
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
@@ -64,14 +61,12 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 		
 		DrawerItem dItem = (DrawerItem) this.drawerItemList.get(position);
 		  if (dItem.getTitle() != null) {
-//			drawerHolder.textkhong.setVisibility(LinearLayout.INVISIBLE);
 			drawerHolder.headerLayout.setVisibility(LinearLayout.VISIBLE);
 			drawerHolder.itemLayout.setVisibility(LinearLayout.INVISIBLE);
 			drawerHolder.title.setText(dItem.getTitle());
 			Log.d("Getview","Passed4");
 		}
-		else {
-//			drawerHolder.textkhong.setVisibility(LinearLayout.INVISIBLE);
+		  else {
 			drawerHolder.headerLayout.setVisibility(LinearLayout.INVISIBLE);
 			drawerHolder.itemLayout.setVisibility(LinearLayout.VISIBLE);
 

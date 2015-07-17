@@ -17,7 +17,7 @@ import info.androidhive.listviewfeed.R;
 
 /**
  * AwesomeAdapter is a Custom class to implement custom row in ListView
- * 
+ *
  * @author Adil Soomro
  *
  */
@@ -25,8 +25,6 @@ public class AwesomeAdapter extends BaseAdapter {
 	private Context mContext;
 	private ArrayList<Message> mMessages;
 	private ImageView avatar;
-
-
 
 	public AwesomeAdapter(Context context, ArrayList<Message> messages) {
 		super();
@@ -44,47 +42,41 @@ public class AwesomeAdapter extends BaseAdapter {
 	@SuppressLint("ResourceAsColor")
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
+
 		Message message = (Message) this.getItem(position);
-
-
-
 		ViewHolder holder;
-		if(convertView == null)
-		{
+
+		if(convertView == null) {
 			holder = new ViewHolder();
+
 			convertView = LayoutInflater.from(mContext).inflate(R.layout.tinnhan_canhan_item, parent, false);
 			holder.message = (TextView) convertView.findViewById(R.id.singleMessage);
-
 			avatar = (ImageView) convertView.findViewById(R.id.avatar);
 
 			convertView.setTag(holder);
 		}
 		else
 			holder = (ViewHolder) convertView.getTag();
-
-		holder.message.setText(message.getMessage());
-
+		    holder.message.setText(message.getMessage());
 
 		LayoutParams lp = (LayoutParams) holder.message.getLayoutParams();
-		//check if it is a status message then remove background, and change text color.
-		if(message.isStatusMessage())
-		{
+
+		if(message.isStatusMessage()) {
 			holder.message.setBackgroundDrawable(null);
-			lp.gravity = Gravity.LEFT;
-			holder.message.setTextColor(R.color.textColor);
+			lp.gravity = Gravity.LEFT;holder.message.setTextColor(R.color.textColor);
 		}
 		else
 		{
 			//Check whether message is mine to show green background and align to right
-			if(message.isMine())
-			{
+			if(message.isMine()) {
+
 				holder.message.setBackgroundResource(R.drawable.hinh_tron);
 				lp.gravity = Gravity.RIGHT;
 				avatar.setVisibility(View.INVISIBLE);
 			}
 			//If not mine then it is from sender to show orange background and align to left
-			else
-			{
+			else {
+
 				holder.message.setBackgroundResource(R.drawable.hinh_tron_nau);
 				lp.gravity = Gravity.LEFT;
 
@@ -94,8 +86,7 @@ public class AwesomeAdapter extends BaseAdapter {
 		}
 		return convertView;
 	}
-	private static class ViewHolder
-	{
+	private static class ViewHolder {
 		TextView message;
 	}
 

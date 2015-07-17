@@ -16,7 +16,6 @@ public class FeedImageView extends ImageView {
 
 	public interface ResponseObserver {
 		public void onError();
-
 		public void onSuccess();
 	}
 
@@ -26,9 +25,6 @@ public class FeedImageView extends ImageView {
 		mObserver = observer;
 	}
 
-	/**
-	 * The URL of the network image to load
-	 */
 	private String mUrl;
 
 	/**

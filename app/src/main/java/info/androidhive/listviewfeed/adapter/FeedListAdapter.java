@@ -94,13 +94,11 @@ public class FeedListAdapter extends BaseAdapter {
 
         name.setText(item.getName());
 
-        // Converting timestamp into x ago format
         CharSequence timeAgo = DateUtils.getRelativeTimeSpanString(
                 Long.parseLong(item.getTimeStamp()),
                 System.currentTimeMillis(), DateUtils.SECOND_IN_MILLIS);
         timestamp.setText(timeAgo);
 
-        // Chcek for empty status message
         if (!TextUtils.isEmpty(item.getStatus())) {
             statusMsg.setText(item.getStatus());
             statusMsg.setVisibility(View.VISIBLE);
@@ -176,7 +174,7 @@ public class FeedListAdapter extends BaseAdapter {
             countlike.setVisibility(View.VISIBLE);
         }
 
-     final TextView comment = (TextView) convertView.findViewById(R.id.txtcomment);
+   final TextView comment = (TextView) convertView.findViewById(R.id.txtcomment);
         comment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -194,7 +192,7 @@ public class FeedListAdapter extends BaseAdapter {
                 }
                 txtlikecomment.setText(likecoment);
 
-      final ImageView imglikecommnet = (ImageView) dialog.findViewById(R.id.comentlike);
+   final ImageView imglikecommnet = (ImageView) dialog.findViewById(R.id.comentlike);
                 imglikecommnet.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -208,13 +206,11 @@ public class FeedListAdapter extends BaseAdapter {
                             item.setIsLiked(true);
                             txtlikecomment.setText("Bạn và " + (item.getGetCountLiked() - 1) + " người thích nội dung này");
                             notifyDataSetChanged();
-
                         }
-
                     }
                 });
 
-       final ImageView imganh = (ImageView) dialog.findViewById(R.id.imganh);
+   final ImageView imganh = (ImageView) dialog.findViewById(R.id.imganh);
                 imganh.setOnClickListener(new View.OnClickListener() {
 
                     @Override
@@ -223,11 +219,8 @@ public class FeedListAdapter extends BaseAdapter {
                         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                         dialog.setContentView(R.layout.news_dialog_status);
                         dialog.show();
-
                     }
-
                 });
-
 
                 final RelativeLayout imgnext = (RelativeLayout) dialog.findViewById(R.id.realcm);
                 imgnext.setOnClickListener(new View.OnClickListener() {
@@ -249,15 +242,9 @@ public class FeedListAdapter extends BaseAdapter {
                         arrcomment.add(pb);
                         adaptercm.notifyDataSetChanged();
                     }
-
-
                 });
-
             }
         });
-
-
         return convertView;
     }
-
 }

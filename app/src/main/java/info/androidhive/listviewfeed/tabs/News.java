@@ -60,7 +60,6 @@ public class News extends Fragment {
 
     private RelativeLayout  real1;
 
-
     private static final String TAG = News.class.getSimpleName();
         private FeedListAdapter listAdapter;
         private List<FeedItem> feedItems;

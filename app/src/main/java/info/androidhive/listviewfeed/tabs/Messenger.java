@@ -66,7 +66,6 @@ public class Messenger extends Fragment {
         mQuickReturnView = (LinearLayout) view.findViewById(R.id.lintn);
         mListViewtn = (QuickReturnListView) view.findViewById(R.id.tnlist);
 
-
         feedItems = new ArrayList<FeedItem>();
         listAdapter = new Feedtinnhan(getActivity(), feedItems);
         mListViewtn.setAdapter(listAdapter);

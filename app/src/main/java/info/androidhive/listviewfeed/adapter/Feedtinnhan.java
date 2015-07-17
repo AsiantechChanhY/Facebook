@@ -23,7 +23,6 @@ import info.androidhive.listviewfeed.data.FeedItem;
  */
 public class Feedtinnhan extends BaseAdapter {
 
-
     private QuickReturnListView mListViewtn;
     private Activity activity;
     private LayoutInflater inflater;

@@ -28,7 +28,6 @@ public class Feedtinnhan_dialog extends ListActivity {
     static Random rand = new Random();
     static String sender;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +41,6 @@ public class Feedtinnhan_dialog extends ListActivity {
         ten = (TextView) findViewById(R.id.txttennguoint);
         ten.setText(item.getName());
 
-
-//        sender = Utility.sender[rand.nextInt( Utility.sender.length-1)];
         this.setTitle(sender);
         messages = new ArrayList<Message>();
 
@@ -54,7 +51,6 @@ public class Feedtinnhan_dialog extends ListActivity {
         messages.add(new Message("you say!", true));
         messages.add(new Message("oh thats great. how are you showing them", false));
 
-
         adapter = new AwesomeAdapter(this, messages);
         setListAdapter(adapter);
         addNewMessage(new Message("mmm, well, using 9 patches png to show them.", true));
@@ -63,18 +59,15 @@ public class Feedtinnhan_dialog extends ListActivity {
         txtDateTime.setText(CurrentDateTime());
 
     }
-    public void sendMessage(View v)
-    {
+    public void sendMessage(View v) {
         String newMessage = text.getText().toString().trim();
-        if(newMessage.length() > 0)
-        {
+        if(newMessage.length() > 0) {
             text.setText("");
             addNewMessage(new Message(newMessage, true));
             new SendMessage().execute();
         }
     }
-    private class SendMessage extends AsyncTask<Void, String, String>
-    {
+    private class SendMessage extends AsyncTask<Void, String, String> {
         @Override
         protected String doInBackground(Void... params) {
             try {
@@ -83,12 +76,6 @@ public class Feedtinnhan_dialog extends ListActivity {
                 e.printStackTrace();
             }
 
-//            this.publishProgress(String.format("%s started writing", sender));
-//            try {
-//                Thread.sleep(2000); //simulate a network call
-//            }catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
             this.publishProgress(String.format("...", sender));
             try {
                 Thread.sleep(3000);//simulate a network call
@@ -96,9 +83,7 @@ public class Feedtinnhan_dialog extends ListActivity {
                 e.printStackTrace();
             }
 
-
             return Utility.messages[rand.nextInt(Utility.messages.length-1)];
-
 
         }
         @Override
@@ -116,18 +101,13 @@ public class Feedtinnhan_dialog extends ListActivity {
         }
         @Override
         protected void onPostExecute(String text) {
-            if(messages.get(messages.size()-1).isStatusMessage)//check if there is any status message, now remove it.
-            {
+            if(messages.get(messages.size()-1).isStatusMessage) {
                 messages.remove(messages.size()-1);
             }
-
             addNewMessage(new Message(text, false)); // add the orignal message from server.
         }
-
-
     }
-    void addNewMessage(Message m)
-    {
+    void addNewMessage(Message m) {
         messages.add(m);
         adapter.notifyDataSetChanged();
         getListView().setSelection(messages.size()-1);
@@ -139,9 +119,6 @@ public class Feedtinnhan_dialog extends ListActivity {
         String s = timeFormat.format(today.getTime());
         return s;
     }
-
-
-
 }
 
 

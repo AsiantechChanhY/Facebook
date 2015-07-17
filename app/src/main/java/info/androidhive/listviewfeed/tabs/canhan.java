@@ -32,9 +32,7 @@ public class canhan extends Fragment {
 
     List<DrawerItem> dataList;
 
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.canhan, container, false);
 
@@ -103,14 +101,8 @@ public class canhan extends Fragment {
         return rootView;
 
     }
-    private CharSequence getTitle(CharSequence title)
-    {
+    private CharSequence getTitle(CharSequence title) {
         mTitle = title;
         return title;
     }
-
-
-
-
-
 }

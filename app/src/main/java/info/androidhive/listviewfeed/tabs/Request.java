@@ -36,25 +36,24 @@ import info.androidhive.listviewfeed.data.FeedItem;
 /**
  * Created by MyConputer on 6/30/2015.
  */
-public class Request extends Fragment{
+public class Request extends Fragment {
 
         private static final String TAG = Request.class.getSimpleName();
-    private QuickReturnListView mListView;
-    private TextView mQuickReturnView;
-    private int mQuickReturnHeight;
+        private QuickReturnListView mListView;
+        private TextView mQuickReturnView;
+        private int mQuickReturnHeight;
 
-    private static final int STATE_ONSCREEN = 0;
-    private static final int STATE_OFFSCREEN = 1;
-    private static final int STATE_RETURNING = 2;
-    private int mState = STATE_ONSCREEN;
-    private int mScrollY;
-    private int mMinRawY = 0;
+        private static final int STATE_ONSCREEN = 0;
+        private static final int STATE_OFFSCREEN = 1;
+        private static final int STATE_RETURNING = 2;
+        private int mState = STATE_ONSCREEN;
+        private int mScrollY;
+        private int mMinRawY = 0;
 
-    private TranslateAnimation anim;
+        private TranslateAnimation anim;
         private Feedketban listAdapter;
         private List<FeedItem> feedItems;
         private String URL_FEED = "http://api.androidhive.info/feed/feed.json";
-
 
         @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
         @Override
@@ -62,7 +61,6 @@ public class Request extends Fragment{
             View view=inflater.inflate(R.layout.request,container,false);
 
             mQuickReturnView = (TextView) view.findViewById(R.id.footer);
-
 
             mListView = (QuickReturnListView) view.findViewById(R.id.listkb);
 
@@ -110,9 +108,7 @@ public class Request extends Fragment{
             }
             return  view;
 
-
         }
-
 
         /**
          * Parsing json reponse and passing the data to feed view list adapter
@@ -128,18 +124,13 @@ public class Request extends Fragment{
                     item.setId(feedObj.getInt("id"));
                     item.setName(feedObj.getString("name"));
 
-//                 Image might be null sometimes
                     String image = feedObj.isNull("image") ? null : feedObj
                             .getString("image");
+
                     item.setImge(image);
-//                item.setStatus(feedObj.getString("status"));
                     item.setProfilePic(feedObj.getString("profilePic"));
                     item.setTimeStamp(feedObj.getString("timeStamp"));
 
-                    // url might be null sometimes
-//                String feedUrl = feedObj.isNull("url") ? null : feedObj
-//                        .getString("url");
-//                item.setUrl(feedUrl);
                     item.setGetCountLiked((int) (Math.random()*100));
                     item.setIsLiked(false);
 
@@ -226,15 +217,11 @@ public class Request extends Fragment{
                     } else {
                         mQuickReturnView.setTranslationY(translationY);
                     }
-
                 }
-
                 @Override
                 public void onScrollStateChanged(AbsListView view, int scrollState) {
                 }
             });
-
         }
-
 }
 

@@ -23,6 +23,7 @@ import info.androidhive.listviewfeed.data.FeedItem;
  * Created by MyConputer on 6/29/2015.
  */
 public class Feedketban extends BaseAdapter {
+
     private Activity activity;
     private LayoutInflater inflater;
     private List<FeedItem> feedItems;
@@ -70,11 +71,9 @@ public class Feedketban extends BaseAdapter {
         name.setText(item.getName());
         profilePic.setImageUrl(item.getProfilePic(), imageLoader);
 
-        // Converting timestamp into x ago format
         CharSequence timeAgo = DateUtils.getRelativeTimeSpanString(
                 Long.parseLong(item.getTimeStamp()),
                 System.currentTimeMillis(), DateUtils.SECOND_IN_MILLIS);
-//        timestamp.setText(timeAgo);
 
         final TextView dakb = (TextView) convertView.findViewById(R.id.txttlcm);
 
@@ -89,16 +88,13 @@ public class Feedketban extends BaseAdapter {
                   imgkb.setBackgroundResource(R.drawable.nokb);
                     dakb.setText("Request");
                 }
-                else
-                {
+                else {
                     imgkb.setBackgroundResource(R.drawable.kbf);
                     dakb.setText("No request");
                 }
 
             }
         });
-
-
         return convertView;
     }
 }

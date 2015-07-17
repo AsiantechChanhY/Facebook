@@ -30,7 +30,6 @@ public class BaseActivity extends SlidingFragmentActivity {
 		} else {
 		}
 
-		// customize the SlidingMenu
 		SlidingMenu sm = getSlidingMenu();
 		sm.setShadowWidthRes(R.dimen.shadow_width);
 		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
@@ -39,10 +38,5 @@ public class BaseActivity extends SlidingFragmentActivity {
 
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
-
-
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
-	 */
 
 }
