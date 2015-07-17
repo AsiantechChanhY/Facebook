@@ -18,6 +18,7 @@ import info.androidhive.listviewfeed.friend_olline.SampleListFragment;
 
 
 public class MainActivity extends BaseActivity {
+
     public MainActivity()
     {
         super(R.string.app_name);
@@ -25,7 +26,6 @@ public class MainActivity extends BaseActivity {
     ViewPager viewPager;
     SlidingTabLayout tabs;
     BadgeView badge;
-    BadgeView bbbb;
     int[] icons={
             R.drawable.newfeed,
             R.drawable.request,
