@@ -25,6 +25,7 @@ public class MainActivity extends BaseActivity {
     ViewPager viewPager;
     SlidingTabLayout tabs;
     BadgeView badge;
+    BadgeView bbbb;
     int[] icons={
             R.drawable.newfeed,
             R.drawable.request,
