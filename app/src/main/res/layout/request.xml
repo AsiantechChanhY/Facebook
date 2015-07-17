@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/realc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtlm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lời mời kết bạn"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cong"
+            android:layout_toRightOf="@+id/txtlm"
+            android:layout_marginLeft="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewg"
+        android:layout_below="@+id/realc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <TextView
+        android:id="@+id/txtyc"
+        android:gravity="center"
+        android:layout_below="@+id/viewg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Không có yêu cầu nào"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:textColor="#eeeeee"/>
+
+    <RelativeLayout
+        android:id="@+id/realtxt"
+        android:layout_below="@+id/txtyc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eeeeee">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="    NHỮNG NGƯỜI BẠN CÓ THỂ BIẾT"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <info.androidhive.listviewfeed.Quickreturn.QuickReturnListView
+        android:id="@+id/listkb"
+        android:layout_below="@id/realtxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </info.androidhive.listviewfeed.Quickreturn.QuickReturnListView>
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#E63b5998"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="8dip"
+        android:text="Thêm Kết bạn "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/primary_text_dark" />
+</RelativeLayout>

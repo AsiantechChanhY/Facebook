@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/tran/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/media/tran/DE04F6C004F69B2B/Users/MyConputer/Desktop/Facebook Like FeedView/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-b03c602526def69438a4ec9c21b8c8573d5ebfaa.jar" />
+    </item>
+    <item
+        jar="/media/tran/DE04F6C004F69B2B/Users/MyConputer/Desktop/Facebook Like FeedView/app/build/intermediates/exploded-aar/Facebook Like FeedView/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3c7f46a7ec7f9afde3b8d0da210a664e614f26c0">
+        <dex dex="/media/tran/DE04F6C004F69B2B/Users/MyConputer/Desktop/Facebook Like FeedView/app/build/intermediates/pre-dexed/debug/classes-ca02188641390fc800c21979608ca8413bb06b28.jar" />
+    </item>
+    <item
+        jar="/media/tran/DE04F6C004F69B2B/Users/MyConputer/Desktop/Facebook Like FeedView/app/libs/volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="/media/tran/DE04F6C004F69B2B/Users/MyConputer/Desktop/Facebook Like FeedView/app/build/intermediates/pre-dexed/debug/volley-ca40824adb71bb0ab03d6eedbbc2fcc370536733.jar" />
+    </item>
+
+</items>

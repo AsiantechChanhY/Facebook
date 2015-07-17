@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"/><!-- From: file:/media/tran/DE04F6C004F69B2B/Users/MyConputer/Desktop/Facebook%20Like%20FeedView/app/src/main/res/layout/custom_tabs_layout.xml -->

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5d6db">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:layout_marginBottom="10dp"
+        android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/realcmlike"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/realthich"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/comentlike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/txtcomentsl"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/realthich"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+<ListView
+    android:id="@+id/listcm"
+    android:layout_below="@+id/realcmlike"
+    android:layout_width="wrap_content"
+    android:layout_height="450dp">
+
+</ListView>
+
+        <View
+            android:id="@+id/viewha"
+            android:layout_below="@+id/listcm"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/realanh2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/realanh"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imganh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_camerax"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/edtcm"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#00ffffff"/>
+
+        <RelativeLayout
+            android:id="@+id/realcm"
+            android:layout_toRightOf="@+id/edtcm"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

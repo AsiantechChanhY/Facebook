@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <ImageView
+            android:id="@+id/imgcmanhfeeeitem"
+            android:layout_width="@dimen/feed_item_profile_pic"
+            android:layout_height="@dimen/feed_item_profile_pic"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/imgcmanhfeeeitem"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgcmketban"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/txtcmnamecutom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="Người vô danh"/>
+
+            <TextView
+                android:id="@+id/txttlcmdeeitem"
+                android:layout_below="@+id/txtcmnamecutom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/timestamp"
+                android:textSize="5pt" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

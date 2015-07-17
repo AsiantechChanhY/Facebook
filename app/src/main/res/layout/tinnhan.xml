@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/realtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tin nhắn"
+            android:textSize="8pt"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/browser_new_post"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <info.androidhive.listviewfeed.Quickreturn.QuickReturnListView
+        android:id="@+id/tnlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/realtn">
+    </info.androidhive.listviewfeed.Quickreturn.QuickReturnListView>
+    <LinearLayout
+        android:id="@+id/lintn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#E63b5998"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/real1tn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img1tn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_status"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_toRightOf="@+id/img1tn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tin nhắn"
+                android:textSize="7pt"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"
+            android:background="#fff"
+            android:layout_gravity="center">
+
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/real2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_toRightOf="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhóm"
+                android:textSize="7pt"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/privacy_friends_of_friends"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"
+            android:background="#fff"
+            android:layout_gravity="center">
+
+        </View>
+
+
+    </LinearLayout>
+</RelativeLayout>

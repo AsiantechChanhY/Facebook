@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/realtncn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/txttennguoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtthoigianol"
+            android:layout_below="@+id/txttennguoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hoạt động 0 phút trước"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/realtncn"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/realtncn2"
+        android:layout_below="@+id/realtncn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Thêm các tin nhắn trước đây..."
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"
+          android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+        <ListView
+        android:layout_above="@+id/realanh2"
+        android:layout_below="@+id/realtncn2"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:listSelector="#00000000"
+        android:background="#fff">
+        </ListView>
+    <View
+        android:layout_above="@+id/realanh2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/realanh2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/linearquicknews">
+
+
+        <EditText
+            android:id="@+id/edtcmtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="#00ffffff"
+            android:textColor="#000"
+            android:hint="Wirte a message"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true" />
+
+        <RelativeLayout
+            android:id="@+id/realcmtn"
+            android:layout_alignParentRight="true"
+            android:onClick="sendMessage"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imgtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearquicknews"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#fff"
+        android:weightSum="7">
+
+        <RelativeLayout
+            android:id="@+id/real1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tools_text_icon_active"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/real2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/native_group_creation_take_photo"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/album"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real5"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orca_stickers_off"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real6"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/composer_shortcut_voiceclip_button_normal"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real7"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orca_attachments_emoji_more_pressed"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_flyout_like_icon_pressed"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/popup"
+    android:layout_height="wrap_content"
+    android:background="@drawable/orca_recorder_popup_white_neue"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/realimgpoput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgpoput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popup"
+        android:layout_toRightOf="@+id/imgpoput1"
+        android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realimgpoput2"
+        android:layout_below="@+id/realimgpoput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgpoput2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popup"
+            android:layout_toRightOf="@+id/imgpoput2"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realimgpoput3"
+        android:layout_below="@+id/realimgpoput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgpoput3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popup"
+            android:layout_toRightOf="@+id/imgpoput3"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

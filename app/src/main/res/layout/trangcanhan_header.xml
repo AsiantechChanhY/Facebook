@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/realcn2"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/anhnentcn">
+
+        <RelativeLayout
+            android:id="@+id/realcn1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/caspian_titlebar_icon_up"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/anhdaidien"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/hinhvuongcn"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/anhcn">
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_s"
+                android:background="#eee"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="75dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trần ChanhY"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/anhdaidien"
+                android:layout_centerVertical="true"
+                android:textSize="13pt"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_s"
+                android:background="#eee"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lincn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/realcn2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="2"
+            android:layout_toLeftOf="@+id/realcn3">
+
+            <RelativeLayout
+                android:id="@+id/real1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fbui_friend_editinfo_l"
+                    android:layout_marginTop="3dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_below="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Info"
+                    android:textSize="6pt"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:layout_gravity="center">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/real2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_below="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Log"
+                    android:textSize="6pt"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fbui_activitylog_l"
+                    android:layout_marginTop="3dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/realcn3"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/imgcn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/three_dots_vertical_dark_grey_l"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+            </ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/viewcn"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lincn"
+        android:background="#eeeeee">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/linearquicknews"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/viewcn"
+        android:layout_alignParentLeft="true"
+        android:background="#eeeeee"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/real5"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_toRightOf="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real6"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_toRightOf="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHOTO"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_toRightOf="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRIENDS"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
